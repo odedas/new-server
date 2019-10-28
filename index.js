@@ -1,7 +1,7 @@
 // this is  a simple server
 const express = require('express');
 const app = express();
-
+// add automated builds of docker hub
 app.get('/', (req, res, next) => {
     res.send('Hello from simple servr, version 2');
 });
