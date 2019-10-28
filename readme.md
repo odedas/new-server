@@ -17,5 +17,7 @@ docker rmi [image id,...]
 https://hub.docker.com/?ref=login
 odedas  docker1234
 Hit Ctrl+C to stop the container.
+docker image build -t bulletinboard:1.0 .
+docker container run --publish 8000:8080 --detach --name bb bulletinboard:1.0
 
 
